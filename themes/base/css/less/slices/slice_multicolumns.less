@@ -1,0 +1,61 @@
+// ==========================================================================
+// Slice multi columns (slice__multicolumns)
+// ==========================================================================
+
+& {
+  // Slice multi columns
+  // ==========================================================================
+  // Example HTML:
+  // <div class="slice__multicolumns">
+  // 	...
+  // </div>
+
+  .slice__multicolumns-header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 0;
+    color: @brand-2;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+
+  .slice__multicolumns {
+    background: #fbfbfb;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+
+    &.last {
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    .slice__multicolumns-content {
+      width: 33.33%;
+      display: table-cell;
+      border-collapse: separate;
+      padding: 30px 60px;
+      margin: 15px 0;
+      text-align: center;
+
+      &.middle {
+        border-right: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+      }
+
+      h3 {
+        margin-top: 15px;
+      }
+
+      .icon {
+        font-size: 26px;
+      }
+
+      @media @xs {
+        width: 100%;
+      }
+    }
+  }
+
+  // END OF SCOPE
+}

@@ -1,0 +1,103 @@
+// ==========================================================================
+// Typography (t)
+// ==========================================================================
+
+// The typography file is for type styles. These will be defined as
+// modules so that the styles can be easily extended in later
+// phases of the project.
+
+// Mixins
+// ==========================================================================
+// Global heading styles can be defined as mixins and included in any and each
+// of the type modules. Any non-global styles can be defined thereafter.
+// Duplicate as necessary.
+
+& {
+body {
+	-webkit-font-smoothing: antialiased;
+    font-family: @font-brand;
+}
+
+h1 {
+	margin: 0 0 20px 0;
+	font-size: 60px;
+	line-height: 64px;
+	font-weight: bold;
+	color: @brand-1;
+}
+
+h2 {
+	margin:0 0 25px 0;
+	font-size: 38px;
+	line-height: 42px;
+	font-weight: bold;
+	color: @brand-1;
+}
+
+h3 {
+	margin:0 0 10px 0;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: normal;
+	color: @font-dark;
+}
+
+h4 {
+	margin:0 0 10px 0;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	color: @font-dark;
+}
+
+p {
+	margin: 0 0 10px 0;
+	font-size: 15px;
+	line-height: 17px;
+	color: @font-dark;
+}
+
+a {
+    text-decoration: none;
+	color: @brand-1;
+	.transition(all 0.3s ease-in-out);
+}
+
+// Editable content
+// ==========================================================================
+// For blocks with CMS content where things like lists need to be styled.
+
+.type--content {
+	ul {
+		list-style-type: disc;
+	}
+	ul, ol {
+		list-style-position: outside;
+		margin: 0 0 18px 16px;
+		padding: 0;
+
+		li {
+			p {
+				.ie8 &,
+				.ie9 &,
+				.ie10 & {
+					display: inline;
+				}
+			}
+		}
+	}
+}
+
+// Center aligned
+// ==========================================================================
+.type--center {
+	text-align: center;
+}
+
+// Right aligned
+// ==========================================================================
+.type--right {
+	text-align: right;
+}
+
+}

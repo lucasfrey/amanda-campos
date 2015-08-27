@@ -1,0 +1,81 @@
+// ==========================================================================
+// Contact (contact)
+// ==========================================================================
+
+& {
+  // Footer
+  // ==========================================================================
+  // Example HTML:
+  // <div class="contact-form">
+  // 	...
+  // </div>
+
+  .contact-form {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    h2 {
+      color: @brand-dark;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .contact-form__form {
+      padding: 25px;
+      width: 50%;
+      float: left;
+
+      @media @xs {
+        width: 100%;
+      }
+
+      label {
+        font-weight: normal;
+        font-size: 18px;
+      }
+
+      textarea {
+        width: 80%;
+        height: 200px;
+        border: 1px solid @brand-grey;
+        margin: 10px 0 25px;
+        padding: 10px;
+      }
+
+      input[type="submit"] {
+        width: 150px;
+        background: #FFF;
+        border: 3px solid @brand-blue;
+        color: @brand-blue;
+
+        &:hover {
+          background-color: @brand-blue;
+          color: #FFF;
+        }
+      }
+
+      input {
+        padding: 10px;
+        margin: 10px 0 25px 0;
+        width: 70%;
+        border: 1px solid @brand-grey;
+
+        @media @xs {
+          width: 100%;
+        }
+      }
+    }
+
+    .contact-form__infos {
+      padding: 25px;
+      width: 50%;
+      float: left;
+
+      @media @xs {
+        width: 100%;
+      }
+    }
+  }
+
+  // END OF SCOPE
+}

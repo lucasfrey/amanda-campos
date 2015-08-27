@@ -1,0 +1,32 @@
+---
+Name: mysite
+After: 'framework/*','cms/*'
+---
+
+SSViewer:
+  theme: 'base'
+
+GDBackend:
+  default_quality: 90
+
+ImagickBackend:
+  default_quality: 90
+
+Image:
+  extensions:
+    - ResampleImage
+
+ResampleImage:
+  max_x: 2000
+  max_y: 2000
+
+Page:
+  extensions:
+    - PageSlicesExtension
+
+ContentSlice:
+  previewStylesheets:
+    - 'themes/base/source/css/style.css'
+  extensions:
+    - AdaptiveContent
+    - AdaptiveContentRelated('Page')

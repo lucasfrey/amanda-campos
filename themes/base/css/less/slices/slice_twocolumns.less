@@ -1,0 +1,29 @@
+// ==========================================================================
+// Slice two columns (slice__twocolumns)
+// ==========================================================================
+
+& {
+  // Slice two columns
+  // ==========================================================================
+  // Example HTML:
+  // <div class="slice__twocolumns">
+  // 	...
+  // </div>
+
+  .slice__twocolumns {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .slice__twocolumns-image {
+        text-align: center;
+    }
+
+    .slice__twocolumns-content {
+      @media @sm {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  // END OF SCOPE
+}

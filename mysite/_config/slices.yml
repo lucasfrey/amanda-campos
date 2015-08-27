@@ -1,0 +1,47 @@
+ContentSlice:
+  extensions:
+    - HashPathExtension
+
+  uploadFolderFields:
+    - LeadFile
+    - LeadImage
+    - SecondaryImage
+    - TertiaryImage
+
+  templates:
+    Heading:
+      name: Heading (title and subtitle only)
+      fields:
+        Title: ~
+        Teaser: Subtitle / lead-in
+
+
+    TwoColumns:
+      name: Two columns with image
+      fields:
+        Content: Content
+        LeadImage: Image
+
+
+    MultiColumn:
+      name: Multi column
+      fields:
+        Title:
+          label: Title above columns
+          help: This is optional - columns can have their own headings
+        Content: Column 1
+        RelationLink:
+          label: Icon 1
+          help: For the icon : bubble, time, people
+        SecondaryContent: Column 2
+        SecondaryIdentifier: icon 2
+        TertiaryContent: Column 3
+        TertiaryIdentifier: icon 3
+
+    Experience:
+      className: ExperienceSlice
+
+      fields:
+        Title: ~
+        SecondaryIdentifier: Class name
+
