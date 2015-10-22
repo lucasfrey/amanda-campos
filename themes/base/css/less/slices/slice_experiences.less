@@ -1,0 +1,71 @@
+// ==========================================================================
+// Slice experiences (slice__experiences)
+// ==========================================================================
+
+& {
+  // Slice experiences
+  // ==========================================================================
+  // Example HTML:
+  // <div class="slice__experience">
+  // 	...
+  // </div>
+
+  .slice__experiences {
+    background: url('/themes/base/images/school.jpg') no-repeat;
+
+    .slice__experiences-title {
+      color: #000;
+      width: 100%;
+      padding: 45px 0;
+    }
+
+    .slice__experience-bloc {
+      width: 100%;
+      float: left;
+      margin-top: 35px;
+      padding-bottom: 35px;
+      margin-bottom: 45px;
+      border-bottom: 1px solid #fff;
+
+
+      .experience-image {
+        width: 20%;
+        float: left;
+      }
+
+      .experience-content {
+        width: 70%;
+        float: left;
+        h3, p {
+          color: #fff;
+        }
+
+        h3 {
+          padding: 0 0 10px 0;
+        }
+      }
+
+      &.last {
+        border: none;
+      }
+    }
+
+    &.school {
+      background: none;
+
+      h2 {
+        color: @brand-dark;
+      }
+
+      .experience-content {
+        h3, p {
+          color: @brand-dark;
+        }
+
+      }
+
+    }
+  }
+
+  // END OF SCOPE
+}

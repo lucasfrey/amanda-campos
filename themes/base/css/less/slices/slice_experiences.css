@@ -1,0 +1,34 @@
+.slice__experiences {
+  background: url('/themes/base/images/school.jpg') no-repeat;
+}
+.slice__experiences .slice__experiences-title {
+  color: #000;
+  width: 100%;
+  padding: 45px 0;
+}
+.slice__experiences .slice__experience-bloc {
+  width: 100%;
+  float: left;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.slice__experiences .slice__experience-bloc .experience-image {
+  width: 20%;
+  float: left;
+}
+.slice__experiences .slice__experience-bloc .experience-content {
+  width: 70%;
+  float: left;
+}
+.slice__experiences .slice__experience-bloc .experience-content h3 {
+  padding: 0 0 10px 0;
+}
+.slice__experiences .slice__experience-bloc.last {
+  border: none;
+}
+.slice__experiences.school {
+  background: none;
+}

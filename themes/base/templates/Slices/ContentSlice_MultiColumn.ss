@@ -12,16 +12,9 @@
         <% end_if %>
 
         <% if $SecondaryContent %>
-            <div class="slice__multicolumns-content middle">
+            <div class="slice__multicolumns-content right">
                 <span class="icon icon--$SecondaryIdentifier"></span>
                 $SecondaryContent
-            </div>
-        <% end_if %>
-
-        <% if $TertiaryContent %>
-            <div class="slice__multicolumns-content">
-                <span class="icon icon--$TertiaryIdentifier"></span>
-                $TertiaryContent
             </div>
         <% end_if %>
     </div>

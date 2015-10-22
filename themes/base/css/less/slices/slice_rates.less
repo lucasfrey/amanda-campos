@@ -1,0 +1,53 @@
+// ==========================================================================
+// Slice rates (slice__rates)
+// ==========================================================================
+
+& {
+  // Slice rates
+  // ==========================================================================
+  // Example HTML:
+  // <div class="slice__rates">
+  // 	...
+  // </div>
+
+  .slice__rates {
+    padding-bottom: 175px;
+    background-position: center;
+    background-size: cover;
+
+
+    .slice__rates-inner {
+      background-color: #fff;
+      min-height: 200px;
+      padding: 20px;
+
+      h2 {
+        color: @brand-dark;
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 5px;
+
+        thead {
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          border-bottom: 1px solid @brand-dark;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        tr {
+          height: 40px;
+        }
+
+        td {
+          width: 20%;
+        }
+      }
+
+    }
+  }
+
+  // END OF SCOPE
+}

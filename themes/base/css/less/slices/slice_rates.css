@@ -1,0 +1,10 @@
+.slice__rates {
+  padding-bottom: 175px;
+  background-position: center;
+  background-size: cover;
+}
+.slice__rates .slice__rates-inner {
+  background-color: #fff;
+  min-height: 200px;
+  padding: 20px;
+}

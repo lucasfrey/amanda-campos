@@ -1,15 +1,18 @@
-<div class="slice__experiences h-clearfix container $SecondaryIdentifier">
-    <h2>$Title</h2>
-
+<div class="slice__experiences h-clearfix $SecondaryIdentifier">
+    <div class="slice__experiences-title">
+        <h2 class="container">$Title</h2>
+    </div>
+    <div class="container">
     <% loop $Experiences %>
         <div class="slice__experience-bloc <% if $Last %>last<% end_if %>">
             <% if $Image %>
-                <div class="exprience-image l-col-2 l-padding">
+                <div class="experience-image l-padding">
                     $Image
                 </div>
             <% end_if %>
             <% if $Content %>
-                <div class="exprience-content l-col-8 l-padding">
+                <div class="experience-content l-padding">
+                    <h3>$Title</h3>
                     $Content
                 </div>
             <% end_if %>

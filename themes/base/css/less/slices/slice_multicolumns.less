@@ -21,7 +21,6 @@
 
 
   .slice__multicolumns {
-    background: #fbfbfb;
     display: table;
     width: 100%;
     border-bottom: 1px solid #dcdcdc;
@@ -31,20 +30,41 @@
     }
 
     .slice__multicolumns-content {
-      width: 33.33%;
+      width: 50%;
       display: table-cell;
       border-collapse: separate;
-      padding: 30px 60px;
+      padding: 70px 60px;
       margin: 15px 0;
       text-align: center;
 
-      &.middle {
-        border-right: 1px solid #dcdcdc;
+      p {
+        color: #666;
+      }
+
+      &.right {
         border-left: 1px solid #dcdcdc;
       }
 
       h3 {
+        color: @font-darker;
         margin-top: 15px;
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 15px;
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      h3:before {
+        content : "";
+        position: absolute;
+        left    : 45%;
+        bottom  : 0;
+        height  : 1px;
+        width   : 10%;  /* or 100px */
+        border-bottom: 3px solid #222;
       }
 
       .icon {

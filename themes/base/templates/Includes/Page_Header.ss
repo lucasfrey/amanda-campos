@@ -3,7 +3,7 @@
         <img class="logo" src="/themes/base/images/logo.png" alt="Amanda Campos" />
 
         <div class="header__menu">
-            <a href="/">About</a>
+            <a href="/" class="first">About</a>
             <a href="/">Contact</a>
         </div>
 
