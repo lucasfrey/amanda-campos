@@ -10,13 +10,15 @@ class ContactFormConfirmationEmail extends Email
      */
     public function __construct(ContactFormConfirmationEmail $submission)
     {
+        $config = SiteConfig::current_site_config();
+
         $this->setTemplate('ContactFormConfirmationEmail');
         $this->populateTemplate(array(
             'Submission' => $submission
         ));
 
         parent::__construct(
-            'amanda.camposa@gmail.com',
+            $config->EmailAddress,
             $submission->Email,
             'Thank you for your email'
         );
