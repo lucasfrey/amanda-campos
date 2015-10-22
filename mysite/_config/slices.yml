@@ -22,6 +22,11 @@ ContentSlice:
         Content: Content
         LeadImage: Image
 
+    Rates:
+      name: Rates
+      fields:
+        Content: Content
+        LeadImage: Image
 
     MultiColumn:
       name: Multi column
@@ -35,8 +40,6 @@ ContentSlice:
           help: For the icon : bubble, time, people
         SecondaryContent: Column 2
         SecondaryIdentifier: icon 2
-        TertiaryContent: Column 3
-        TertiaryIdentifier: icon 3
 
     Experience:
       className: ExperienceSlice
